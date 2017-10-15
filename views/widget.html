@@ -4,8 +4,8 @@
 {% elif widget.linkType == 'custom' %}
   {% set path = widget.linkUrl %}
 {% endif %}
-{% if data.options.selectors.length > 0 %}
-  {% set selectors = true %}
-  {% set selector = data.options.selectors | join(' ') %}
+{% if data.options.classes.length > 0 %}
+  {% set classes = true %}
+  {% set class = data.options.selectors | join(' ') %}
 {% endif %}
-<a {% if selectors %}class="{{ selector }}"{% endif %} href="{{ path }}"{% if widget.linkTarget %}target="_blank"{% endif %} >{{ widget.linkText }}</a>
+<a {% if classes %}class="{{ class }}"{% endif %} href="{{ path }}"{% if widget.linkTarget %}target="_blank" {% endif %}>{{ widget.linkText }}</a>
