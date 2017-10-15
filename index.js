@@ -41,8 +41,7 @@ module.exports = {
           title: 1,
           slug: 1,
           type: 1,
-          tags: 1,
-          _url: 1
+          tags: 1
         }
       }
     },
@@ -55,8 +54,7 @@ module.exports = {
     {
       name: 'linkTarget',
       label: 'Will the link open a new browser tab?',
-      type: 'boolean',
-      required: true
+      type: 'boolean'
     }
   ]
 };
