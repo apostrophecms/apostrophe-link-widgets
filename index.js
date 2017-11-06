@@ -1,5 +1,6 @@
 module.exports = {
   extend: 'apostrophe-widgets',
+  label: 'Link',
   addFields: [
     {
       name: 'linkText',
