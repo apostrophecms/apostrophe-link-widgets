@@ -2,7 +2,7 @@
 
 A link widget for [ApostropheCMS](http://apostrophecms.org/).
 
-`apostrophe-links-widgets` provides schema and a view for links.
+`apostrophe-link-widgets` provides schema and a view for links.
 
 ## Installation
 
@@ -12,21 +12,12 @@ npm install apostrophe-link-widgets --save
 
 ## Use
 
-You can use `apostrophe-links-widgets` as a singleton, area or as type `singleton` in your schema.
+You can use `apostrophe-link-widgets` as you would any widget in ApostropheCMS.
 
-This widget is useful for creating links, buttons or navigation lists.
-
-```nunjucks
-{{ apos.singleton(data.page, 'link' 'apostrophe-link') }}
-```
+Here's an example of a singleton:
 
 ```nunjucks
-{{ apos.area(data.page, 'area', {
-    widgets: {
-      'apostrophe-link': {}
-    }
-  })
-}}
+{{ apos.singleton(data.page, 'link', 'apostrophe-link') }}
 ```
 
 ## Options
