@@ -2,7 +2,7 @@
 
 A link widget for [ApostropheCMS](http://apostrophecms.org/).
 
-`apostrophe-link-widgets` provides schema and a view for links.
+`apostrophe-link-widgets` provides a simple way for users to create a link, giving them the option to choose a page or enter a URL manually.
 
 ## Installation
 
@@ -22,4 +22,4 @@ Here's an example of a singleton:
 
 ## Options
 
-`classes`: Takes an array of classes to be used on the link
+`classes`: Takes an array of CSS class names to be applied to the link
