@@ -1,0 +1,11 @@
+{% set widget = data.widget %}
+{% if widget.linkType == 'page' %}
+  {% set path = widget._linkPage._url %}
+{% elif widget.linkType == 'custom' %}
+  {% set path = widget.linkUrl %}
+{% endif %}
+{% if data.options.classes.length > 0 %}
+  {% set classes = true %}
+  {% set class = data.options.classes | join(' ') %}
+{% endif %}
+<a {% if classes %}class="{{ class }}"{% endif %} href="{{ path }}"{% if widget.linkTarget %}target="_blank" {% endif %}>{{ widget.linkText }}</a>
