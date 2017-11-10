@@ -8,4 +8,4 @@
   {% set classes = true %}
   {% set class = data.options.classes | join(' ') %}
 {% endif %}
-<a {% if classes %}class="{{ class }}"{% endif %} href="{{ path }}"{% if widget.linkTarget %}target="_blank" {% endif %}>{{ widget.linkText }}</a>
+<a{% if classes %} class="{{ class }}"{% endif %} href="{{ path }}"{% if widget.linkTarget %} target="_blank"{% endif %}>{{ widget.linkText }}</a>
