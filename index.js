@@ -1,4 +1,4 @@
-var schema = require('./lib/schema.js');
+const schema = require('./lib/schema.js');
 
 module.exports = {
   extend: 'apostrophe-widgets',
