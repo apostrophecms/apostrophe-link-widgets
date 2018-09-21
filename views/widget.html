@@ -1,6 +1,8 @@
 {% set widget = data.widget %}
 {% if widget.linkType == 'page' %}
   {% set path = widget._linkPage._url %}
+{% elif widget.linkType == 'file' %}
+  {% set path = widget._linkFile._url%}
 {% elif widget.linkType == 'custom' %}
   {% set path = widget.linkUrl %}
 {% endif %}
