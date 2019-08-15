@@ -1,6 +1,6 @@
 {
   "name": "apostrophe-link-widgets",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Link widgets for ApostropheCMS",
   "main": "index.js",
   "scripts": {
@@ -8,24 +8,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/punkave/apostrophe-link-widgets.git"
+    "url": "git+https://github.com/apostrophecms/apostrophe-link-widgets.git"
   },
   "keywords": [
     "ApostropheCMS",
     "apostrophe",
     "apostrophe-cms",
-    "cms",
-    "content management",
-    "content management system",
-    "Link",
-    "Widget"
+    "link widget"
   ],
   "author": "P'unk Ave",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/punkave/apostrophe-link-widgets/issues"
+    "url": "https://github.com/apostrophecms/apostrophe-link-widgets/issues"
   },
-  "homepage": "https://github.com/punkave/apostrophe-link-widgets#readme",
+  "homepage": "https://github.com/apostrophecms/apostrophe-link-widgets#readme",
   "devDependencies": {
     "eslint": "^4.2.0",
     "eslint-config-punkave": "^1.0.8",

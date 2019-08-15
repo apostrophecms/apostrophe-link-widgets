@@ -1,11 +1,5 @@
 {% set widget = data.widget %}
-{% if widget.linkType == 'page' %}
-  {% set path = widget._linkPage._url %}
-{% elif widget.linkType == 'file' %}
-  {% set path = widget._linkFile._url %}
-{% elif widget.linkType == 'custom' %}
-  {% set path = widget.linkUrl %}
-{% endif %}
+{% set path = apos.links.linkPath(data.widget) %}
 {% if data.options.classes.length > 0 %}
   {% set classes = true %}
   {% set class = data.options.classes | join(' ') %}
