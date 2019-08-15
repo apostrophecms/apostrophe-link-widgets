@@ -42,3 +42,7 @@ In a navigation widget schema
 ## Options
 
 `classes`: Takes an array of CSS class names to be applied to the link
+
+## Template helper
+
+When building custom templates using this module, finding the right type of link and getting the URL out based on that type can be very verbose. This module includes a template helper to make this simpler. Use `apos.links.linkPath(data.widget)` to get the correct URL path. If [using the schema independently](#use-as-a-schema), pass a single link instance in as the argument.
