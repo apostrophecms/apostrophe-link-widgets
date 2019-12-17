@@ -6,6 +6,21 @@ module.exports = {
   alias: 'links',
   beforeConstruct: (self, options) => {
     options.addFields = schema.concat(options.addFields || []);
+
+    options.arrangeFields = [
+      {
+        name: 'basics',
+        label: 'Basics',
+        fields: [
+          'linkText',
+          'linkType',
+          '_linkPage',
+          '_linkFile',
+          'linkUrl',
+          'linkTarget'
+        ]
+      }
+    ];
   },
   construct: (self, options) => {
     self.addHelpers({
