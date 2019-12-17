@@ -1,6 +1,6 @@
 {
   "name": "apostrophe-link-widgets",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Link widgets for ApostropheCMS",
   "main": "index.js",
   "scripts": {
